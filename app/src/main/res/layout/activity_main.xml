@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff0000"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/value1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukkan nilai 1"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <EditText
+        android:id="@+id/value2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukkan nilai 2"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/value1"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/viewHasil"
+        android:layout_width="265dp"
+        android:layout_height="61dp"
+        android:text="Hasil"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/value2"
+        app:layout_constraintVertical_bias="0.895" />
+
+    <Button
+        android:id="@+id/tbTambah"
+        android:layout_width="172dp"
+        android:layout_height="73dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#fff200"
+        android:onClick="clickTambah"
+        android:text="TAMBAHIN"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tbKali"
+        app:layout_constraintEnd_toStartOf="@+id/tbKurang"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966" />
+
+    <Button
+        android:id="@+id/tbKurang"
+        android:layout_width="172dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#fff200"
+        android:onClick="clickKurang"
+        android:text="KURANGIN"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tbBagi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tbTambah"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944" />
+
+    <Button
+        android:id="@+id/tbKali"
+        android:layout_width="172dp"
+        android:layout_height="73dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#fff200"
+        android:onClick="clickKali"
+        android:text="KALIIN"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tbBagi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723" />
+
+    <Button
+        android:id="@+id/tbBagi"
+        android:layout_width="172dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="#fff200"
+        android:onClick="clickBagi"
+        android:text="BAGIIN"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toEndOf="@+id/tbKali"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="393dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="16dp"
+        android:text="APLIKASI KALKULATOR SEDERHANA"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/value1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
